@@ -220,7 +220,7 @@ class PreconditionFailure(Exception):
 
     def __init__(self, precondition, description) -> None:
         self.precondition = precondition
-        self.description = description
+        self.description = precondition
 
 
 class InsufficientStorage(Exception):
